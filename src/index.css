@@ -8,3 +8,8 @@ body {
   height: 100%;
   width: auto;
 }
+aside.emoji-picker-react{
+  width: 75rem;
+  height: 40rem;
+border-radius: 50px;
+}
