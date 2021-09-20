@@ -1,38 +1,80 @@
 .App {
   text-align: center;
 }
+.box{
+ 
+  vertical-align: middle;
+  border-radius: 50px;
+  margin: 3% 5rem;
+  box-shadow: 0px 0px 10px 8px rgba(151, 126, 241, 0.637);
+}
+aside.emoji-picker-react{
+  width: 75rem;
+  height: 40rem;
+border-radius: 50px;
+}
+.emoji-categories{
+  background-color:rgba(255, 0, 0, 0.952);
+  border-radius: 50px;
+  margin: 2rem 5rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+.txt{
+  text-align: center;
+  background-color: white;
+  margin: 0.1rem;
+ 
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+.emoji-picker-react .emoji-categories button {
+  
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+.emoji-picker-react input.emoji-search {
+margin-bottom: 2rem;
+border-radius: 50px;
+box-shadow: 0px 0px 10px 1px;
+transition: border 0.1s;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emoji-picker-react .emoji-scroll-wrapper {
+  margin: 1rem;
+  
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 50px;
+}
+.cpy{
+  font-size: 3rem;
+  background-color: white;
+  border: none;
+  margin: 0 2rem;
+}
+.cpy:hover{
+  box-shadow: 2rem;
+  color:blueviolet;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width:768px){
+  
+  html{
+    font-size: 50%;
+    margin-top: 10vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  aside.emoji-picker-react{
+   width: auto;
+    height: 50rem;
+  border-radius: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .txt{
+    margin: 5rem 0;
   }
-}
+  
+  }
